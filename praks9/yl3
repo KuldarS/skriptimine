@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# väljastus
+echo -n "Sisesta ridade arv: "
+read ri
+echo -n "Sisesta tärnide arv reas: "
+read ta
+for (( i = 1; i <= $ri; i++ ))
+do
+echo -n "$i"
+if [ "$i" == 1 ] || [ "$i" == $ri ]
+then
+for (( j = 1; j <= $ta; j++ ))
+do
+echo -n "*"
+done
+else echo -n "*"
+for (( a = 2; a < $ta; a++ ))
+do
+echo -n " "
+done
+echo -n "*"
+fi
+echo ""
+done
+#läbi
