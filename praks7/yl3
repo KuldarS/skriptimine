@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# skript algab
+echo -e "Sisesta siia aeg: \c"
+read aeg
+#
+if [ $aeg -ge 6 -a $aeg -lt 12 ];
+         then echo "Tere hommikust!"
+elif [ $aeg -ge 12 -a $aeg -lt 16 ];
+         then echo "Tere päevast!"
+elif [ $aeg -ge 17 -a $aeg -lt 22 ];
+         then echo "Tere õhtust!"
+elif [ $aeg -ge 23 -a $aeg -lt 24 ];
+         then echo "Magama minek!"
+elif [ $aeg -ge 0 -a $aeg -lt 5 ];
+         then echo "Head ööd"
+fi
+#
+# skript lõppeb
