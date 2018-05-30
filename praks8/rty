@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# 10 esimest
+#
+for (( kord=1; kord<=5; kord++))
+do
+echo "suvaline tegevus"
+done
+# skript lõpp
+
