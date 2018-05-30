@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# kuud
+#
+echo -n "Vali kuu number: "
+read number
+#
+#
+case $number in
+1) echo "jaanuar=talv";;
+2) echo "veebruar=talv";;
+3) echo "märts=kevad";;
+4) echo "aprill=kevad";;
+5) echo "mai=kevad";;
+6) echo "juuni=suvi";;
+7) echo "juuli=suvi";;
+8) echo "august=suvi";;
+9) echo "september=sügis";;
+10) echo "oktoober=sügis";;
+11) echo "november=sügis";;
+12) echo "detsember=talv";;
+#
+esac 
+#
+# skript lõpp
