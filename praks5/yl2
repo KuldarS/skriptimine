@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# kolmnurga pindala arvutamine
+#
+# sisesta külje väärtused
+echo -n "Sisesta a külg: "
+read a
+echo -n "Sisesta b külg: "
+read b
+echo -n "Sisesta c külg: "
+read c
+#
+# p
+p=$( echo "scale=2;($a+$b+$c)/2" | bc )
+# ruutjuures olev avaldis p*(p-a)*(p-b)*(p-c)
+pindala=`echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc`
+# väljastame
+echo "pindala = $pindala"
+
