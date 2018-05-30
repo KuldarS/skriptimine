@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# paaris ja paaritu
+#
+#
+echo -n "Sisesta mingi täisarv: "
+read arv
+jaak=$(($arv % 2))
+if [ $jaak -eq 1 ]
+   then echo "Arv on paaritu"
+   else echo "Arv on paaris"
+fi
+#
+#
+#lõpp skriptil
