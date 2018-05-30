@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# väljastus2
+echo -n "Sisesta ridade arv: "
+read ri
+for (( i = 1; i <= $ri; i++ ))
+do
+echo -n "$i"
+for (( j = 1; j <= $i; j++ ))
+do
+echo -n "*"
+done
+echo ""
+done
