@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Reisi arvutus
+#
+# skripti algus
+#
+echo "pyhapaev - 0, esmaspaev - 1 ... laupaev - 6"
+# andmed
+echo -n "sisesta millal soidad ara: "
+read reisi algus
+# palju reisid
+echo -n "sisesta reisi oopaevade arv: "
+read paevad
+#
+# tulemused
+#
+# arvutatakse reisi nadalad ja palju reisipaevi yle jaab
+veel_reisi_paevad=$(($paevad % 7))
+# kuna tagasi
+tagasi=$(($reisi_algus + $veel_reisi_paevad))
+#
+# tulemused
+#
+echo "Tagasi oled paeval number $tagasi"
